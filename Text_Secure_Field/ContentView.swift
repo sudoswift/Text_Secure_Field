@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name = ""
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Form{
+            TextField("아이디", text: $name) // $ 달러 사인 필수 입력
+            Text("입력한 아이디는 \(name) 입니다.")
+        }
     }
 }
 
