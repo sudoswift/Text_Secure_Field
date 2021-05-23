@@ -9,6 +9,7 @@ import SwiftUI
 
 struct textField: View {
     @State private var name = ""
+    
     var body: some View {
         HStack{
             if !name.isEmpty{
@@ -17,7 +18,7 @@ struct textField: View {
                     .disableAutocorrection(false)
                     .textCase(.none)
                 Button(action: {
-                    name = ""
+                    self.name = ""
                 }, label: {
                     Image(systemName: "delete.left.fill")
                         .foregroundColor(.black)

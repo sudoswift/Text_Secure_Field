@@ -9,6 +9,7 @@ import SwiftUI
 
 struct secureField: View {
     @State private var password = ""
+    
     var body: some View {
         HStack{
             if !password.isEmpty{
@@ -16,7 +17,7 @@ struct secureField: View {
                     .disableAutocorrection(true)
                     .textCase(.none)
                 Button(action: {
-                    password = ""
+                    self.password = ""
                 }, label: {
                     Image(systemName: "delete.left.fill")
                         .foregroundColor(.black)
