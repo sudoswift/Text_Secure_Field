@@ -17,5 +17,5 @@
  - TextField View 밑에 disableAutocorrection 를 true 로 설정해줌으로써 TextField에 자동완성이 생성되는 것을 막아준다. preset이 false임.
  - if !name.isEmpty 의 조건문을 통해 TextField가 비어있으면 기본 TextField가 보이도록 설정해주고, TextField에 String이 입력되면 SF Symbols를 이용한 이미지의 버튼이 보이게 만들어준다.
  - SF Symbols를 이용한 버튼을 클릭하면 action을 self.name = "" 으로 그 내용이 초기화 되도록 설정해준다.
- - [Clear button googling keyword](https://www.google.com/search?q=swiftui+textfield+clear+button)[참조](https://stackoverflow.com/questions/58200555/swiftui-add-clearbutton-to-textfield)
+ - [Clear button googling keyword](https://www.google.com/search?q=swiftui+textfield+clear+button), 실제 참조 [참조](https://stackoverflow.com/questions/58200555/swiftui-add-clearbutton-to-textfield)
  - 배경색은 ZStack 에 Color.blue.edgeIgnoringSafeArea(.all) 을 이용해 파란색으로 설정해주었다.  
