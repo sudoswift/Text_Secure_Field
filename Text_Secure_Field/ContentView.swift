@@ -11,12 +11,16 @@ struct ContentView: View {
     @State private var name: String = ""
     @State private var password: String = ""
     var body: some View {
-        VStack{
-            textField()
-            secureField()
-            Text("입력한 아이디 : \(name)")
-        }.textFieldStyle(RoundedBorderTextFieldStyle())
-        .padding(.horizontal, 50)
+        ZStack {
+            Color.blue
+                .edgesIgnoringSafeArea(.all)
+            VStack{
+                textField()
+                secureField()
+                Text("입력한 아이디 : \(name)")
+            }.textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding(.horizontal, 50)
+        }
     }
 }
 

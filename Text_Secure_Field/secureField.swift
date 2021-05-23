@@ -14,16 +14,18 @@ struct secureField: View {
         HStack{
             if !password.isEmpty{
                 SecureField("비밀번호를 입력해주세요.", text: $password)
+                    .autocapitalization(.none)
                     .disableAutocorrection(true)
                     .textCase(.none)
                 Button(action: {
                     self.password = ""
                 }, label: {
                     Image(systemName: "delete.left.fill")
-                        .foregroundColor(.black)
+                        .foregroundColor(.secondary)
                 })
             } else {
                 SecureField("비밀번호를 입력해주세요.", text: $password)
+                    .autocapitalization(.none)
                     .disableAutocorrection(true)
                     .textCase(.none)
             }
